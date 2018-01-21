@@ -1,3 +1,28 @@
+*, body, a, a:hover {cursor: url(http://img69.imageshack.us/img69/7673/cursorw.png), auto;}
+
+a {
+    color:#bec2f4;
+    text-decoration:none;
+}
+body {
+        font-size: 10px;
+        font-family:Calibri;
+        color: #888;
+        background-color: #fff;}
+
+
+   ::-webkit-scrollbar-thumb:vertical {
+    background: #aaa;
+    border: 7px solid #f1f1f1;
+    width: 7px;
+}
+ 
+::-webkit-scrollbar {
+    height: 10px;
+    width: 15px;
+    background: none;
+    border: 7px solid none;
+}
 
 #electrailmusicplayer {
     position:fixed;
@@ -18,7 +43,7 @@
 -ms-transition: all 0.6s ease-in-out;
 transition: all 0.6s ease-in-out;
 }
- 
+
 #player {
     width:50px;
     overflow:hidden;
@@ -32,13 +57,13 @@ transition: all 0.6s ease-in-out;
 -ms-transition: all 0.6s ease-in-out;
 transition: all 0.6s ease-in-out;
 }
- 
+
 .musicbar {
     border-bottom:1px solid #aaa /*color of the long line that the play/pause symbol slides on*/;
     width:133px;
     height:25px;
 }
- 
+
 .muslide {
     width:14px;
     margin-left:113px;
@@ -51,7 +76,7 @@ transition: all 0.6s ease-in-out;
 -ms-transition: all 0.6s ease-in-out;
 transition: all 0.6s ease-in-out;
 }
- 
+
 #electrailmusicplayer:hover #player {
     margin-left::0px;
     width:155px;
@@ -61,7 +86,7 @@ transition: all 0.6s ease-in-out;
 -ms-transition: all 0.6s ease-in-out;
 transition: all 0.6s ease-in-out;
 }
- 
+
 #electrailmusicplayer:hover .muslide {
     margin-left:5px;
     -webkit-transition: all 0.6s ease-in-out;
@@ -79,7 +104,7 @@ transition: all 0.6s ease-in-out;
 -ms-transition: all 0.6s ease-in-out;
 transition: all 0.6s ease-in-out;
 }
- 
+
 .musicplayergif {
     position:absolute;
     margin-top:8px;
@@ -94,7 +119,7 @@ transition: all 0.6s ease-in-out;
 -ms-transition: all 0.6s ease-in-out;
 transition: all 0.6s ease-in-out;
 }
- 
+
 #electrailmusicplayer:hover .musicplayergif {
     width:0px;
     -webkit-transition: all 0.6s ease-in-out;
@@ -103,7 +128,7 @@ transition: all 0.6s ease-in-out;
 -ms-transition: all 0.6s ease-in-out;
 transition: all 0.6s ease-in-out;
 }
- 
+
 #pegleft {
     position:absolute;
     margin-top:20px;
@@ -111,7 +136,7 @@ transition: all 0.6s ease-in-out;
     width:1px;
     background-color:#aaa /*color of the short vertical line attatched to the left of the long line*/;;
 }
- 
+
 #pegright {
     position:absolute;
     margin-top:-6px;
@@ -123,7 +148,7 @@ transition: all 0.6s ease-in-out;
     -webkit-transition-delay: 0.2s;
     transition-duration: 0.4s;
 }
- 
+
 #electrailmusicplayer:hover #tracklist {
     width:115px;
     padding:3px 3px 3px 3px;
@@ -141,7 +166,7 @@ transition: all 0.6s ease-in-out;
     border-color:#ddd /*color of the border of the tracklist*/;;
     top:15px;
     background-color:#eee /*color of the background of the tracklist*/;
-    height:92px /*!!!!!!!!!HEIGHT OF THE TRACKLIST IN PIXELS... CHANGE TO MAKE TRACKLIST LONGER OR SHORTER!!!!!!!!!*/;
+    height:41px /*!!!!!!!!!HEIGHT OF THE TRACKLIST IN PIXELS... CHANGE TO MAKE TRACKLIST LONGER OR SHORTER!!!!!!!!!*/;
     width:0px;
     font-family:consolas;
     font-size:9px;
@@ -153,16 +178,16 @@ transition: all 0.6s ease-in-out;
 -ms-transition: all 0.3s ease-in-out;
 transition: all 0.3s ease-in-out;
 }
- 
+
 #electrailmusicplayer:hover #pegright {
-    height:120px /*!!!!!!!!!HEIGHT OF THE LINE THAT GROWS LONGER BESIDE THE TRACKLIST... SHOULD BE: THE HEIGHT OF THE TRACKLIST + 28PX!!!!!!!!!*/;
+    height:69px /*!!!!!!!!!HEIGHT OF THE LINE THAT GROWS LONGER BESIDE THE TRACKLIST... SHOULD BE: THE HEIGHT OF THE TRACKLIST + 28PX!!!!!!!!!*/;
     -webkit-transition: all 0.6s ease-in-out;
 -moz-transition: all 0.6s ease-in-out;
 -o-transition: all 0.6s ease-in-out;
 -ms-transition: all 0.6s ease-in-out;
 transition: all 0.6s ease-in-out;
 }
- 
+
 #tracklist li:first-letter {
     color:#53c9a0 /*color of the first letter of the song titles*/;
     font-weight:bold;
@@ -171,7 +196,264 @@ transition: all 0.6s ease-in-out;
 #tracklist li {
     list-style-type:decimal-leading-zero;
 }
- 
+
 .tracktitle {
     color:#888 /*color of the song titles*/;
+}
+
+.title1 {
+    margin-top:-40px;
+    position:absolute;
+    font-family:consolas;
+    
+}
+
+
+
+
+
+
+
+#electrailmusicplayer2 {
+    position:fixed;
+    left:300px /*position from the left of the screen... "left" can be changed to "right" and it can be positioned from the right of the screen instead*/;
+    top:100px /*position from the top of the screen... "top" can be changed to "bottom" and it can be positioned from the bottom of the screen instead*/;
+    z-index:99999;
+}
+#muover2 {
+    position:absolute;
+    z-index:99;
+    margin-top:6px;
+    height:14px;
+    width:14px;
+    overflow:hidden;
+    -webkit-transition: all 0.6s ease-in-out;
+-moz-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+-ms-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+}
+
+#player2 {
+    width:50px;
+    overflow:hidden;
+    margin-top:-1px;
+    margin-left:-23px;
+    position:absolute;
+    opacity:0.8;
+    -webkit-transition: all 0.6s ease-in-out;
+-moz-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+-ms-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+}
+.musicbar2 {
+    border-bottom:1px solid #aaa /*color of the long line that the play/pause symbol slides on*/;
+    width:133px;
+    height:25px;
+}
+
+.muslide2 {
+    width:14px;
+    margin-left:113px;
+    height:24px;
+    margin-top:-2px;
+    border-bottom:4px solid #5ee6af /*color of the line under the play/pause symbol that slides*/;
+    -webkit-transition: all 0.6s ease-in-out;
+-moz-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+-ms-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+}
+
+#electrailmusicplayer2:hover #player2 {
+    margin-left::0px;
+    width:155px;
+    -webkit-transition: all 0.6s ease-in-out;
+-moz-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+-ms-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+}
+
+#electrailmusicplayer2:hover .muslide2 {
+    margin-left:5px;
+    -webkit-transition: all 0.6s ease-in-out;
+-moz-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+-ms-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+}
+   
+#electrailmusicplayer2:hover #muover2 {
+    width:126px;
+    -webkit-transition: all 0.6s ease-in-out;
+-moz-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+-ms-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+}
+
+.musicplayergif2 {
+    position:absolute;
+    margin-top:8px;
+    margin-left:5px;
+    background-image:url('http://media.tumblr.com/tumblr_m7w29rPpMg1r6o8v2.gif') /*REPLACE LINK WITH DIFFERENT MUSIC PLAYER IMAGE URL IF NEEDED. To do this, go to http://manatopia.org/post/36068550052/music-player-gifs [or a different website if you know one] and pick a gif that you like. Then, right-click it and click "Copy image URL". Delete the current link about and paste in the image URL. */;
+    repeat:repeat-x;
+    width:103px;
+    height:11px;
+    -webkit-transition: all 0.6s ease-in-out;
+-moz-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+-ms-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+}
+
+#electrailmusicplayer2:hover .musicplayergif2 {
+    width:0px;
+    -webkit-transition: all 0.6s ease-in-out;
+-moz-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+-ms-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+}
+
+#pegleft2 {
+    position:absolute;
+    margin-top:20px;
+    height:10px;
+    width:1px;
+    background-color:#aaa /*color of the short vertical line attatched to the left of the long line*/;;
+}
+
+#pegright2 {
+    position:absolute;
+    margin-top:-6px;
+    right:0px;
+    height:10px;
+    width:1px;
+    background-color:#aaa /*color of the short vertical line attatched to the right of the long line*/;
+    transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
+    transition-duration: 0.4s;
+}
+
+#electrailmusicplayer2:hover #tracklist2 {
+    width:115px;
+    padding:3px 3px 3px 3px;
+    border-width:6px 1px 1px 1px;
+    transition-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;
+    transition-duration: 0.4s;
+}
+#tracklist2 {
+    position:absolute;
+    right:10px;
+    border-width:6px 0px 1px 0px;
+    padding:3px 0px 3px 0px;
+    border-style:solid;
+    border-color:#ddd /*color of the border of the tracklist*/;;
+    top:15px;
+    background-color:#eee /*color of the background of the tracklist*/;
+    height:161px /*!!!!!HEIGHT OF THE TRACKLIST IN PIXELS... CHANGE TO MAKE TRACKLIST LONGER OR SHORTER!!!!*/;
+    width:0px;
+    font-family:consolas;
+    font-size:9px;
+    color:#bbb /*color of the numbers on the tracklist*/;
+    overflow:hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+#electrailmusicplayer2:hover #pegright2 {
+    height:189px /*!!!!HEIGHT OF THE LINE THAT GROWS LONGER BESIDE THE TRACKLIST... SHOULD BE: THE HEIGHT OF THE TRACKLIST + 28PX!!!*/;
+    -webkit-transition: all 0.6s ease-in-out;
+-moz-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+-ms-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+}
+
+.updatetitle2:first-letter {
+    color:#53c9a0 /*color of the first letter of the titles*/;
+    font-style:italic;
+}
+
+
+.updatetitle2 {
+    position:relative;
+    color:#888 /*color of the titles*/;
+    z-index:1;
+    font-size:9px;
+    letter-spacing:1px;
+    font-weight:bold;
+}
+
+.bgblock2 {
+    background-color:#eee /*match this with the the background of the tracklist*/;
+    padding-right:3px;
+}
+
+.linetitle2 {
+    position:absolute;
+    width:113px;
+    height:1px;
+    background-color:#dfc3dd; /*color of the line before the titles*/
+    margin-top:-5px;
+}
+
+.hovfor2 {
+    position:absolute;
+    font-family:consolas;
+    color:#cecece;/*color of "(updates)"*/
+    font-size:9px;
+    margin-left:10px;
+    background-color:#f9f9f9; /*color of "(updates)" background*/
+    margin-top:8px;
+    letter-spacing:1px;
+    height:10px;
+    overflow:hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+#electrailmusicplayer2:hover .hovfor2 {
+    height:0px;
+    -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+.updatecontent2 {
+    width:115px;
+    color:#aaa;
+    padding-top:3px;
+    padding-bottom:8px;
+    font-size:10px;
+}
+
+.updatecontent2 a{
+    color:#53c9a0 /*color of links*/;
+    -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+.updatecontent2 a:hover {
+    color:#53c9a0; /*color of links on hover*/
+    -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
 }
